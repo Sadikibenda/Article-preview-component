@@ -1,0 +1,107 @@
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    width: 650px;
+    height: 220px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card__img{
+    width: 300px;
+    height: 220px;
+    border-radius: 10px 0 0 10px;
+}
+.card__author-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.card__author{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.card__content h2{
+    margin: 0;
+}
+.card__content p{
+    margin: 0;
+    font-size: 13px;
+    color: hsl(228, 12%, 44%);
+}
+.card__author-info{
+    margin-left: 10px;
+    line-height: 2px;
+}
+.card__share{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: hsl(210, 46%, 95%);
+}
+.card__share__popup{
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    right: -60px;
+    bottom: 30px;
+    width: 150px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
+    padding: 10px 20px 20px 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 54% 76%, 49% 99%, 44% 75%, 0% 75%);
+}
+.card__share__popup p{
+    color: hsl(212, 23%, 69%);
+    margin-top: 5px;
+}
+
+@media (min-width: 375px) and (max-width: 768px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height: 450px;
+        font-size: 13px;
+    }
+    .card__img{
+        width: 320px;
+        height: 220px;
+        border-radius: 10px 10px 0 0;
+    }
+    .card__content p{
+        margin: 10px;
+    }
+}
