@@ -86,7 +86,10 @@ body{
 .card__share__popup p{
     color: hsl(212, 23%, 69%);
     margin-top: 5px;
+    word-spacing: normal;
 }
+
+
 
 @media (min-width: 375px) and (max-width: 768px){
     .card{
@@ -104,4 +107,34 @@ body{
     .card__content p{
         margin: 10px;
     }
-}
+
+    /*  section below to add on javascript */
+
+    .card__share__popup{
+        display: none;
+        justify-content: left;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: -20px;
+        bottom: -16.5px;
+        width: 300px;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5 );
+        padding: 10px;
+        clip-path: none;
+    }
+    .card__share{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        border-radius: 50%;
+        padding: 7px;
+        cursor: pointer;
+        background-color: hsl(210, 46%, 95%);
+        z-index: 1;
+    }
+
+    }
